@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- ajouter la ligne pour boodstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Diaporama</title>
+    <!-- reset  -->
+    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
+    <!-- mes styles en externe -->
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    
+     <!--async permet de charger le html en premier et adapter le script, ce qui permet de trouver les identifiants du html p1,p2,.. et lancer le script JS une fois le html lu-->
+
+    <!-- Ajouter le CSS boodstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <!-- script en externe -->
+   <style>
+        /* Sticky footer styles
+-------------------------------------------------- */
+        html {
+        position: relative;
+        min-height: 100%;
+        }
+        body {
+        /* Margin bottom by footer height */
+        margin-bottom: 60px;
+        }
+        .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: auto;
+        /* line-height: 60px; Vertically center the text there */
+        /* background-color: #f5f5f5; */
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <section class="jumbotron"> 
+        <h1 class="display-3">JUMBOTRON -Diaporama</h1>  
+        <!-- jumbotron / container / row/ col -->
+    </section> 
+
+    <div class="container">
+        <div class="row">
+            <div id="carouselExampleControls" class="carousel slide col-12" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100 rounded-circle img-fluid" src="img/tk/2.jpg" alt="Tank girl 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 rounded-circle img-fluid" src="img/tk/3.jpg" alt="Tank girl 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 rounded-circle img-fluid" src="img/tk/4.jpg" alt="Tank girl 3">
+                  </div>
+                </div> <!--fin de carousel inner-->
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div> <!--fin d'exemple controle-->
+        
+        </div> <!--fin de row-->
+
+        <div class="row m-3">
+            <div class="carousel slide col-4" data-ride="carousel" data-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100 rounded img-fluid" src="img/tk/9.jpg" alt="Tank girl 4">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100 rounded img-fluid" src="img/tk/6.jpg" alt="Tank girl 5">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100 rounded img-fluid" src="img/tk/7.jpg" alt="Tank gitm 6">
+                    </div>
+                  </div>            
+                </div>
+            <div class="col-4">
+                <p>Tank Girl est le personnage principal d’une série de bande dessinée britannique, créée par Alan Martin (scénario) et Jamie Hewlett (dessin). Elle est apparue pour la première fois dans le fanzine Atomtan, auto-édité par les auteurs, puis sa série a débuté dans Deadline Magazine en octobre 1988.
+                    <br>
+                    En réaction au thatchérisme ambiant à l’époque de sa création1, Tank Girl est influencée par la vague punk et en arbore les signes distinctifs : crête iroquoise, épingles à nourrice, batte de baseball. Ce comics pour adultes aborde également des thèmes féministes, sexuellement explicites et anarchistes. </p>
+            </div>
+            <div class="col-4">
+                <p>À bord de son tank, Rebecca Buck parcourt une Australie post-apocalyptique en compagnie d’un kangourou mutant. L’Australie n’a pas vraiment changé par rapport à notre époque, un grand désert de sable rouge où survivent encore tant bien que mal des aborigènes et des kangourous.
+                    <br>
+                    Dans ce monde évoluent différents protagonistes plus individualistes qu’humanistes. La mafia semble dicter sa loi à un pays gangrené par la corruption et le Président Hogan règne sans partage malgré ses 92 ans. La petite équipe qui gravite autour de Tank Girl n’a pas envie de se laisser marcher sur les pieds. Renvoyée de son job de conducteur de tank après avoir largement « merdé » dans une mission de la plus haute importance, Rebecca Buck aurait dû délivrer un chargement d’anus artificiels au président. Tank Girl est alors mise au ban d’une société qu’elle renie déjà largement. Elle entre en conflits avec ses anciens patrons comme le sergent Titbit et son Squad de la mort…
+                    <br>
+                    Ce comics, underground à ses débuts, narre surtout les péripéties d’une ado sûre d’elle et décomplexée, bien décidée à vivre sa vie comme elle l’entend. </p>
+            </div>
+        </div> <!--fin de row-->
+        <br>
+        <br>
+    </div> <!--fin de container-->
+  
+    <footer class="footer bg-danger">
+        <div class="container">
+            <!-- text-muted -->
+            <p class="text-muted">by... ASL </p>
+        </div>
+    </footer>
+
+    <!-- En 1er JQuery, puis Popper.js et le JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <!-- <script>
+        // // Diaporama avec setInterval()
+
+        // let varImg = 0; //on commence par initaliser à zero le compteur car la premiere image s'appelle 1
+        // console.log(typeof varImg, varImg);
+
+        // // let testGet = imgDiapo.getAttribute('src');
+        // // console.log(testGet);
+
+        // function monDiaporama() {
+        //     varImg += 1; //on affecte 1 pour incrémenter , additionne et affecte +=
+        //     imgDiapo.setAttribute('src', 'img/tk/' + varImg + '.jpg');
+        //     // console.log(varImg);
+        //     if(varImg == 9) { //car j'ai 10 images appelée de 1 à 10 dans le dossier /img
+        //         clearInterval(timer); //permet de stopper dès que la variable est à égale à 10 dans ce cas
+        //     }
+        // } //fin de fonction monDiaporama
+
+        // // cette ligne appelle la fonction et intègre un interval (grace à setInterval) en milliseconde de lecture (toujours appeler une fonction)
+        // let timer = window.setInterval('monDiaporama()', 2000);
+
+
+    </script> -->
+</body>
+</html>     
